@@ -91,7 +91,6 @@ class AudioDevice(QtWidgets.QMainWindow):
         self.canvas.draw()
 
     def save_audiogram(self):
-        # Make sure the plot is updated before saving
         self.canvas.draw()
 
         options = QtWidgets.QFileDialog.Options()
@@ -99,7 +98,7 @@ class AudioDevice(QtWidgets.QMainWindow):
             self,
             "Save Audiogram As",
             "",
-            "Images (*.png *.jpg)",  # Supported formats
+            "Images (*.png *.jpg)",
             options=options
         )
 
