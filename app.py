@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from PyQt5 import QtWidgets, QtCore
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 
-ser = serial.Serial('COM6', 9600, timeout=1)  # Update this to your Arduino's COM port
+ser = serial.Serial('COM6', 9600, timeout=1)  
 
 class AudioDevice(QtWidgets.QMainWindow):
     def __init__(self):
